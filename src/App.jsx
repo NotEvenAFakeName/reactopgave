@@ -5,14 +5,23 @@ import "./app.css";
 
 import Layout from "./components/layout/Layout";
 import Home from "./components/home/Home";
+import Events from "./components/event/Events";
+import Sponsore from "./components/sponsore/Sponsore";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <div className="App">
-      <Layout>
-        <Home />
-      </Layout>
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/events" element={<Events />} />
+            <Route path="/sponsore" element={<Sponsore/>} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
     </div>
   );
 }
