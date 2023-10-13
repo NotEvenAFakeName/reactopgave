@@ -46,7 +46,7 @@ const Events = () => {
                                                 <p className="m-0" style={{ fontSize: 10 }}>D.28/03 KL.10:40</p>
                                                 <p style={{ fontSize: 14 }}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia facere velit veritatis vel culpa veniam...</p>
                                                 <p><strong>Pris: 250kr</strong></p>
-                                                <button className="w-100 mb-2 btn btn-danger">LÆS MERE</button>
+                                                <Link to="/eventside"><button className="w-100 mb-2 btn btn-danger">LÆS MERE</button></Link>
                                             </div>
                                         </article>
                                     </div>
